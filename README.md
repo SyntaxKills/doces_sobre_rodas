@@ -58,4 +58,4 @@ Resumindo: a empresa enfrentava problemas de organização e atualização de ca
 
 ## 📞 Contato
 
-- 📸 Instagram: [@doces_sobre_rodas](https://instagram.com/doces_sobre_rodas)
+- 📸 Instagram: [@doce_sobre_rodas](https://instagram.com/doce_sobre_rodas)
