@@ -63,4 +63,4 @@ Resumindo: a empresa enfrentava problemas de organização e atualização de ca
 
 ```
 
-Doces Sobre Rodas © Copyright 2026
+Copyright © 2026 Doces Sobre Rodas
