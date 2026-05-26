@@ -59,3 +59,7 @@ Resumindo: a empresa enfrentava problemas de organização e atualização de ca
 ## 📞 Contato
 
 - 📸 Instagram: [@doce_sobre_rodas](https://instagram.com/doce_sobre_rodas)
+
+```
+
+- Doces Sobre Rodas © Since 2026
