@@ -98,8 +98,8 @@ Desenvolvendo...
 
 ### 📄 Documentação
 
-<a href="documento.txt" target="_blank">
- <img src="https://img.shields.io/badge/documentação-%230078D4.svg?style=for-the-badge&logo=documentação&logoColor=white" alt="documentação">
+<a href="https://github.com/SyntaxKills/doces_sobre_rodas/blob/main/documento.txt" target="_blank">
+ <img src="https://img.shields.io/badge/documentação-%23E4405F.svg?style=for-the-badge&logo=documentação&logoColor=blue" alt="documentação">
 </a>
 
 ---
