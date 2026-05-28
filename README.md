@@ -8,7 +8,7 @@ MODELAGEM EM BANCO DE DADOS
 
 ---
 
-## 📄 Descrição
+## ✔️ Solução
 
 A substituição de planilhas e cardápios físicos por um sistema automatizado zerou a perda de vendas, os erros de dados e a insatisfação dos clientes.
 
