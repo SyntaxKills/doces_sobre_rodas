@@ -8,6 +8,16 @@ MODELAGEM EM BANCO DE DADOS
 
 ---
 
+## ⚠️ Problemas
+
+Os principais problemas são:
+
+- Confusão no Cardápio: Itens esgotados continuam sendo exibidos, gerando desalinhamento com o estoque real[span_0](start_span)[span_0](end_span).
+- Estoque Inconsistente: O controle manual gera erros de contagem e perda de dados por acidentes físicos (papéis molhados ou rasgados)[span_1](start_span)[span_1](end_span).
+- Insatisfação e Perda de Vendas: A demora para confirmar pedidos e os erros de marcação afastam os clientes e geram prejuízo[span_2](start_span)[span_2](end_span).
+
+---
+
 ## ✔️ Solução
 
 A substituição de planilhas e cardápios físicos por um sistema automatizado zerou a perda de vendas, os erros de dados e a insatisfação dos clientes.
