@@ -1,5 +1,7 @@
 # 🥯 DOCES SOBRE RODAS
 
+# 🥯 DOCES SOBRE RODAS
+
 <p align="center">
   <img src="assets/images/logotipo-1.jpg" width="250">
 </p>
@@ -8,13 +10,15 @@ MODELAGEM EM BANCO DE DADOS
 
 ---
 
-## ⚠️ Problemas
+## ⚠️ Problema
 
 Os principais problemas são:
 
-- Confusão no Cardápio: Itens esgotados continuam sendo exibidos, gerando desalinhamento com o estoque real[span_0](start_span)[span_0](end_span).
-- Estoque Inconsistente: O controle manual gera erros de contagem e perda de dados por acidentes físicos (papéis molhados ou rasgados)[span_1](start_span)[span_1](end_span).
-- Insatisfação e Perda de Vendas: A demora para confirmar pedidos e os erros de marcação afastam os clientes e geram prejuízo[span_2](start_span)[span_2](end_span).
+- Erros e Confusões no Cardápio: Os produtos são listados por categoria, mas itens esgotados continuam sendo exibidos, gerando desalinhamento entre o cardápio e o estoque.
+  
+- Dados Inconsistentes: O controle manual está sujeito a erros de contagem e a acidentes físicos (como papéis molhados ou rasgados), tornando as informações de estoque incertas e pouco confiáveis.
+  
+- Insatisfação e Perda de Vendas: A falta de organização e a demora para confirmar a disponibilidade dos doces geram uma experiência negativa para os clientes, resultando na perda de vendas.
 
 ---
 
@@ -67,7 +71,9 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 
 ## 📞 Contato
 
-- 📸 Instagram: [@doce_sobre_rodas](https://instagram.com/doce_sobre_rodas)
+<a href="https://instagram.com/doce_sobre_rodas" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram">
+</a>
 
 ```
 
