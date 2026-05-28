@@ -14,8 +14,6 @@ A substituição de planilhas e cardápios físicos por um sistema automatizado 
 
 A nova solução agiliza o atendimento e organiza o estoque de doces por categorias, facilitando a visualização.
 
-Resumindo: a empresa enfrentava problemas de organização e atualização de cardápios. O objetivo foi desenvolver um site que facilitasse o acesso às informações, melhorasse o desempenho do negócio e automatizasse a atualização dos produtos de forma organizada e eficiente.
-
 ---
 
 ## 📌 Regras de Negócio
