@@ -9,7 +9,7 @@ MODELAGEM EM BANCO DE DADOS
 
 ## 🪪 Identificação
 
-Doces Sobre Rodas: uma loja móvel focada na venda de doces artesanais, com controles 100% manuais (como planilhas).
+Doces Sobre Rodas: uma loja móvel focada na venda de doces artesanais, com controles 100% manuais.
 
 ---
 
@@ -43,7 +43,7 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 
 - RN04 (Controle de Estoque): A quantidade de produtos em estoque nunca pode ser um valor negativo (`Regra de Validação`).
 
-- RN05 (Itens do Pedido): Um pedido pode conter vários produtos, e um produto pode estar presente em vários pedidos distintos (`Relacionamento N:N`).
+- RN05 (Itens do Pedido): Um pedido pode conter vários produtos, e um produto pode estar presente em vários pedidos (`Relacionamento N:N`).
 
 - RN06 (Fechamento de Venda): O registro da forma de pagamento é obrigatório para a finalização de qualquer venda (`Preenchimento Obrigatório`).
 
@@ -93,6 +93,18 @@ Desenvolvendo...
 <a href="https://instagram.com/doce_sobre_rodas" target="_blank">
   <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram">
 </a>
+
+---
+
+### 📄 Documentação
+
+<a href="documento.txt" target="_blank">
+ <img src="https://img.shields.io/badge/documentação-%230078D4.svg?style=for-the-badge&logo=documentação&logoColor=white" alt="documentação">
+</a>
+
+---
+
+## doces sobre rodas: doces artesanais de qualidade, unindo automação e sabor para garantir a melhor experiência em cada pedido.
 
 ```
 
