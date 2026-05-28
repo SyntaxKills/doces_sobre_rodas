@@ -1,0 +1,44 @@
+>>> identificação do projeto <<<
+|| ------------------------------------------------------------ ||
+ • Nome do Banco de Dados: Doces Sobre Rodas 
+ • Cliente(s): Bryan Sales, Daniel Santos, Larissa Oliveira, Lucas Gonçalves e Rosana Carvalho
+ • Versão: 1.5
+ • Data: 17/04/2026
+|| ------------------------------------------------------------ ||
+>>> visão geral <<<
+|| ------------------------------------------------------------ ||
+a doces sobre rodas é uma empresa focada na venda de doces artesanais, atuando de forma móvel em pontos estratégicos. atualmente, o controle é feito de forma manual, com registro de pedidos em planilhas e os produtos listados no cardápio por categoria, o que causa confusão aos clientes quando itens esgotados continuam sendo exibidos. por operar em constante movimento, a empresa busca um sistema para automatizar a atualização do catálogo e garantir a organização em tempo real.
+|| ------------------------------------------------------------ ||
+>>> problema atual e consequências <<<
+|| ------------------------------------------------------------ ||
+como o controle de registros e cardápios é manual, a desorganização se torna um problema grave. incidentes e confusões no preenchimento de planilhas causam problemas como:
+
+ • perda de vendas: acontece de removerem do cardápio itens que ainda existem no estoque por erro de marcação, fazendo a empresa perder vendas.
+ • dados inconsistentes: o registro manual está sujeito a acidentes (como papéis molhados ou rasgados) e erros de contagem, o que torna o controle de estoque incerto.
+ • insatisfação: o tempo de espera variado para confirmar o que realmente está disponível gera uma experiência negativa para o cliente.
+|| ------------------------------------------------------------ ||
+>>> objetivo da solução <<<
+|| ------------------------------------------------------------ ||
+• objetivo principal: projetar e implementar o banco de dados para um sistema administrativo de vendas, permitindo a automação do catálogo e o controle de estoque em tempo real, garantindo uma estrutura escalável voltada para a futura expansão do modelo de negócio em franquias.
+
+​• benefícios: garantia de que o site irá exibir a quantidade real dos produtos, redução do tempo de espera na aprovação dos pedidos, otimização do atendimento ao cliente e preparação da arquitetura de dados para suportar a integração de novas unidades.
+|| ------------------------------------------------------------ ||
+>>> regras de negócio (restrições para o mysql) <<<
+|| ------------------------------------------------------------ ||
+ • RN01: todo produto deve estar vinculado a uma categoria (Chave Estrangeira).
+ • RN02: o nome do produto deve ser único para evitar duplicidade no catálogo (Valor Único).
+ • RN03: a data de validade não pode ser inferior à data de cadastro (Regra de Validação).
+ • RN04: a quantidade em estoque não pode ser um valor negativo (Regra de Validação).
+ • RN05: um pedido pode conter vários produtos, e um produto pode estar em vários pedidos (Relacionamento N:N).
+ • RN06: o registro da forma de pagamento é obrigatório para cada venda (Preenchimento Obrigatório).
+ • RN07: o valor do produto deve ser um valor positivo superior a zero (Regra de Validação).
+|| ------------------------------------------------------------ ||
+>>> resumo <<<
+|| ------------------------------------------------------------ ||
+a empresa enfrentava desafios com o controle manual, utilizando planilhas e cardápios manuais. os impactos negativos gerados, como perda de vendas, experiência negativa do cliente e inconsistência de dados, foram reduzidos a zero com a implementação de um sistema automatizado. a solução prioriza o atendimento e facilita a visualização dos doces disponíveis em estoque, organizados por categoria.
+|| ------------------------------------------------------------ ||
+doces sobre rodas: doces artesanais de qualidade, unindo automação e sabor para garantir a melhor experiência em cada pedido.
+
+
+
+
