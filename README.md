@@ -1,10 +1,15 @@
-## 🥯 DOCES SOBRE RODAS
+# 🥯 DOCES SOBRE RODAS
 
 <p align="center">
   <img src="assets/images/logotipo-1.jpg" width="250">
 </p>
 
 MODELAGEM EM BANCO DE DADOS
+---
+
+## 🪪 Identificação
+
+Doces Sobre Rodas: uma loja móvel focada na venda de doces artesanais, com controles 100% manuais (como planilhas).
 
 ---
 
@@ -43,6 +48,22 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 - RN06 (Fechamento de Venda): O registro da forma de pagamento é obrigatório para a finalização de qualquer venda (`Preenchimento Obrigatório`).
 
 - RN07 (Preço do Produto): O valor de venda do produto deve ser obrigatoriamente maior que zero (`Regra de Validação`).
+
+---
+
+## 📈 Tabela (MySQL)
+
+<p align="center">
+ <img src="assets/images/MySQL.jpg" width="250">
+</p>
+
+Desenvolvendo...
+
+---
+
+## 💻 Apresentação do Site
+
+Desenvolvendo...
 
 ---
 
