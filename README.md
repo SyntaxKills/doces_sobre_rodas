@@ -56,89 +56,89 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 ```mermaid
 erDiagram
 
+CLIENTE {
+    int id_cliente PK
+    string nome
+    string email
+    string telefone
+    string senha
+    datetime data_cadastro
+}
+
+QUIOSQUE {
+    int id_quiosque PK
+    string nome
+    string shopping
+    string cidade
+    string endereco
+}
+
+FUNCIONARIO {
+    int id_funcionario PK
+    string nome
+    string cargo
+    decimal salario
+    int quiosque_id FK
+}
+
+CATEGORIA {
+    int id_categoria PK
+    string nome_categoria
+}
+
+PRODUTO {
+    int id_produto PK
+    string nome
+    string descricao
+    decimal preco
+    string imagem
+    int id_categoria FK
+}
+
+PEDIDO {
+    int id_pedido PK
+    datetime data_pedido
+    decimal valor_total
+    string status
+    int cliente_id FK
+    int quiosque_id FK
+}
+
+ITEM_PEDIDO {
+    int id_item_pedido PK
+    int quantidade
+    decimal preco_unitario
+    int pedido_id FK
+    int produto_id FK
+}
+
+PAGAMENTO {
+    int id_pagamento PK
+    string forma_pagamento
+    string status_pagamento
+    datetime data_pagamento
+    decimal valor_pago
+    int pedido_id FK
+}
+
+ESTOQUE_QUIOSQUE {
+    int id_estoque PK
+    int quantidade
+    int id_quiosque FK
+    int id_produto FK
+    int id_categoria FK
+}
+
 CLIENTE ||--o{ PEDIDO : realiza
 QUIOSQUE ||--o{ PEDIDO : recebe
 QUIOSQUE ||--o{ FUNCIONARIO : possui
 CATEGORIA ||--o{ PRODUTO : organiza
 PEDIDO ||--o{ ITEM_PEDIDO : contem
 PRODUTO ||--o{ ITEM_PEDIDO : participa
+PEDIDO ||--|| PAGAMENTO : gera
 QUIOSQUE ||--o{ ESTOQUE_QUIOSQUE : controla
 PRODUTO ||--o{ ESTOQUE_QUIOSQUE : possui
 CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
-PEDIDO ||--|| PAGAMENTO : gera
-
-CLIENTE {
-    INT id_cliente PK
-    VARCHAR nome
-    VARCHAR email
-    VARCHAR telefone
-    VARCHAR senha
-    DATETIME data_cadastro
-}
-
-QUIOSQUE {
-    INT id_quiosque PK
-    VARCHAR nome
-    VARCHAR shopping
-    VARCHAR cidade
-    VARCHAR endereco
-}
-
-FUNCIONARIO {
-    INT id_funcionario PK
-    VARCHAR nome
-    VARCHAR cargo
-    DECIMAL salario
-    INT quiosque_id FK
-}
-
-CATEGORIA {
-    INT id_categoria PK
-    VARCHAR nome_categoria
-}
-
-PRODUTO {
-    INT id_produto PK
-    VARCHAR nome
-    TEXT descricao
-    DECIMAL preco
-    VARCHAR imagem
-    INT id_categoria FK
-}
-
-PEDIDO {
-    INT id_pedido PK
-    DATETIME data_pedido
-    DECIMAL valor_total
-    VARCHAR status
-    INT cliente_id FK
-    INT quiosque_id FK
-}
-
-ITEM_PEDIDO {
-    INT id_item_pedido PK
-    INT quantidade
-    DECIMAL preco_unitario
-    INT pedido_id FK
-    INT produto_id FK
-}
-
-PAGAMENTO {
-    INT id_pagamento PK
-    VARCHAR forma_pagamento
-    VARCHAR status_pagamento
-    DATETIME data_pagamento
-    DECIMAL valor_pago
-    INT pedido_id FK
-}
-
-ESTOQUE_QUIOSQUE {
-    INT id_estoque PK
-    INT quantidade
-    INT id_quiosque FK
-    INT id_produto FK
-    INT id_categoria FK
-}
 ```
 
 ---
