@@ -82,13 +82,12 @@ A automação do atendimento e do controle de estoque, que substituiu planilhas 
 
 ## 👨🏻‍💻 Desenvolvedores
 
-- Victor Cândido
-- Alex Júnior
-- Eduardo Alarcon
-- Lucas Gonçalves
-- Igor Macedo
-- Isaac Matos
-- Fernanda Costa
+- Victor Cândido Silva
+- Alex Júnior Silva Santiago
+- Fernanda Costa Pereira de Jesus
+- Igor Silva Macedo
+- Lucas Gonçalves Araujo Silva
+- Eduardo Alarcon da Silva
 
 ---
 
