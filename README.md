@@ -49,93 +49,9 @@ A automação do atendimento e do controle de estoque, que substituiu planilhas 
 
 ### 📌 Tabela (MySQL)
 
-```mermaid
-erDiagram
-
-CLIENTE {
-    int id_cliente PK
-    string nome
-    string email
-    string telefone
-    string senha
-    datetime data_cadastro
-}
-
-QUIOSQUE {
-    int id_quiosque PK
-    string nome
-    string shopping
-    string cidade
-    string endereco
-}
-
-FUNCIONARIO {
-    int id_funcionario PK
-    string nome
-    string cargo
-    decimal salario
-    int quiosque_id FK
-}
-
-CATEGORIA {
-    int id_categoria PK
-    string nome_categoria
-}
-
-PRODUTO {
-    int id_produto PK
-    string nome
-    string descricao
-    decimal preco
-    string imagem
-    int id_categoria FK
-}
-
-PEDIDO {
-    int id_pedido PK
-    datetime data_pedido
-    decimal valor_total
-    string status
-    int cliente_id FK
-    int quiosque_id FK
-}
-
-ITEM_PEDIDO {
-    int id_item_pedido PK
-    int quantidade
-    decimal preco_unitario
-    int pedido_id FK
-    int produto_id FK
-}
-
-PAGAMENTO {
-    int id_pagamento PK
-    string forma_pagamento
-    string status_pagamento
-    datetime data_pagamento
-    decimal valor_pago
-    int pedido_id FK
-}
-
-ESTOQUE_QUIOSQUE {
-    int id_estoque PK
-    int quantidade
-    int id_quiosque FK
-    int id_produto FK
-    int id_categoria FK
-}
-
-CLIENTE ||--o{ PEDIDO : realiza
-QUIOSQUE ||--o{ PEDIDO : recebe
-QUIOSQUE ||--o{ FUNCIONARIO : possui
-CATEGORIA ||--o{ PRODUTO : organiza
-PEDIDO ||--o{ ITEM_PEDIDO : contem
-PRODUTO ||--o{ ITEM_PEDIDO : participa
-PEDIDO ||--|| PAGAMENTO : gera
-QUIOSQUE ||--o{ ESTOQUE_QUIOSQUE : controla
-PRODUTO ||--o{ ESTOQUE_QUIOSQUE : possui
-CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
-```
+<p align="center">
+  <img src="assets/images/MySQL.jpg" width="250">
+</p>
 
 <a href="https://1drv.ms/u/c/53ab9e01f485d193/IQAc1GFvzeXvQJZoDgdy8iyAATiyen1gAfY1ZXxb21G6bc8?e=t3Qxwn" target="_blank" title="Abrir banco de dados MySQL - Doces Sobre Rodas">
   <img src="https://img.shields.io/badge/abrir%20MySQL-FF69B4?style=for-the-badge&logo=mysql&logoColor=white" alt="Link para abrir o MySQL">
@@ -186,13 +102,18 @@ CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
 
 ## 📄 Documentação
 
-<a href="documento.txt" target="_blank">
- <img src="https://img.shields.io/badge/documentação-%230078D4.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="documentação">
+<a href="https://docs.google.com/presentation/d/1HePIB2OfQoQOAYfWeV_9zhCV_SnTo0kgBY9E9xXOr2w/edit?usp=drivesdk" target="_blank">
+ <img src="https://img.shields.io/badge/slides-red.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="slides">
 </a>
 
 ---
 
 ## doces sobre rodas: doces artesanais de qualidade, unindo automação e sabor para garantir a melhor experiência em cada pedido.
+
+<a href="https://docs.google.com/presentation/d/1HePIB2OfQoQOAYfWeV_9zhCV_SnTo0kgBY9E9xXOr2w/edit?usp=drivesdk" target="_blank">
+ <img src="https://img.shields.io/badge/slides-red.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="slides">
+</a>
+
 
 ```
 
