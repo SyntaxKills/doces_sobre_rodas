@@ -13,23 +13,19 @@ Doces Sobre Rodas: uma loja móvel focada na venda de doces artesanais, com cont
 
 ---
 
-## ⚠️ Problema
+## ⚠️ Problemas
 
-Os principais problemas são:
+- Desalinhamento do Cardápio: Itens esgotados continuam visíveis para os clientes devido à falta de sincronização com o estoque.
+- 
+- ​Fragilidade nos Dados: O controle manual gera contagens incorretas e perda de informações por danos físicos aos papéis.
 
-- Erros e Confusões no Cardápio: Os produtos são listados por categoria, mas itens esgotados continuam sendo exibidos, gerando desalinhamento entre o cardápio e o estoque.
-  
-- Dados Inconsistentes: O controle manual está sujeito a erros de contagem e a acidentes físicos (como papéis molhados ou rasgados), tornando as informações de estoque incertas e pouco confiáveis.
-  
-- Insatisfação e Perda de Vendas: A falta de organização e a demora para confirmar a disponibilidade dos doces geram uma experiência negativa para os clientes, resultando na perda de vendas.
+- ​Prejuízo Comercial: A demora no atendimento e a desorganização causam insatisfação nos clientes e perda de vendas.
 
 ---
 
 ## ✔️ Solução
 
-A substituição de planilhas e cardápios físicos por um sistema automatizado zerou a perda de vendas, os erros de dados e a insatisfação dos clientes.
-
-A nova solução agiliza o atendimento e organiza o estoque de doces por categorias, facilitando a visualização.
+A automação do atendimento e do controle de estoque, que substituiu planilhas e cardápios físicos, eliminou erros de dados e perda de vendas. Além de zerar a insatisfação dos clientes, a nova solução agilizou o serviço e organizou visualmente os doces por categorias.
 
 ---
 
@@ -140,6 +136,10 @@ QUIOSQUE ||--o{ ESTOQUE_QUIOSQUE : controla
 PRODUTO ||--o{ ESTOQUE_QUIOSQUE : possui
 CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
 ```
+
+<a href="https://1drv.ms/u/c/53ab9e01f485d193/IQAc1GFvzeXvQJZoDgdy8iyAATiyen1gAfY1ZXxb21G6bc8?e=t3Qxwn" target="_blank" title="Abrir banco de dados MySQL - Doces Sobre Rodas">
+  <img src="https://img.shields.io/badge/abrir%20MySQL-FF69B4?style=for-the-badge&logo=mysql&logoColor=white" alt="Link para abrir o MySQL">
+</a>
 
 ---
 
