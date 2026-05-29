@@ -110,7 +110,7 @@ A automação do atendimento e do controle de estoque, que substituiu planilhas 
 
 ## doces sobre rodas: doces artesanais de qualidade, unindo automação e sabor para garantir a melhor experiência em cada pedido.
 
-<a href="[https://docs.google.com/presentation/d/1HePIB2OfQoQOAYfWeV_9zhCV_SnTo0kgBY9E9xXOr2w/edit?usp=drivesdk](https://docs.google.com/presentation/d/1Z1JEYpZCUBj-RJkqjyvJypKkr1_7TbpGNy1NsUmmOUc/edit?usp=drivesdk)" target="_blank">
+<a href="https://docs.google.com/presentation/d/1Z1JEYpZCUBj-RJkqjyvJypKkr1_7TbpGNy1NsUmmOUc/edit?usp=drivesdk" target="_blank">
  <img src="https://img.shields.io/badge/slides-red.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="slides">
 </a>
 
