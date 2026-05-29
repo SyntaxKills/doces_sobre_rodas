@@ -16,7 +16,7 @@ Doces Sobre Rodas: uma loja móvel focada na venda de doces artesanais, com cont
 ## ⚠️ Problemas
 
 - Desalinhamento do Cardápio: Itens esgotados continuam visíveis para os clientes devido à falta de sincronização com o estoque.
-- 
+
 - ​Fragilidade nos Dados: O controle manual gera contagens incorretas e perda de informações por danos físicos aos papéis.
 
 - ​Prejuízo Comercial: A demora no atendimento e a desorganização causam insatisfação nos clientes e perda de vendas.
