@@ -53,11 +53,53 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 
 ## 📈 Tabela (MySQL)
 
-<p align="center">
- <img src="assets/images/MySQL.jpg" width="250">
-</p>
+erDiagram
+    CLIENTE ||--o{ PEDIDO : realiza
+    PEDIDO ||--|{ ITENS_PEDIDO : possui
+    PAGAMENTO ||--|| PEDIDO : confirma
+    PRODUTO ||--o{ ITENS_PEDIDO : incluído-em
+    CATEGORIA ||--o{ PRODUTO : classifica
+    QUIOSQUE ||--o{ PEDIDO : processa
+    QUIOSQUE ||--o{ ESTOQUE_QUIOSQUE : possui
+    PRODUTO ||--o{ ESTOQUE_QUIOSQUE : armazenado-em
+    QUIOSQUE ||--o{ FUNCIONARIO : emprega
 
-Desenvolvendo...
+    CLIENTE {
+        int id_cliente PK
+        string nome
+        string email
+        string telefone
+    }
+
+    PEDIDO {
+        int id_pedido PK
+        datetime data_pedido
+        decimal valor_total
+        int id_cliente FK
+        int id_quiosque FK
+    }
+
+    PRODUTO {
+        int id_produto PK
+        string nome
+        string descricao
+        decimal preco
+        int id_categoria FK
+    }
+
+    ESTOQUE_QUIOSQUE {
+        int id_estoque PK
+        int quantidade
+        int id_quiosque FK
+        int id_produto FK
+    }
+
+    PAGAMENTO {
+        int id_pagamento PK
+        string forma_pagamento
+        string status_pagamento
+        int id_pedido FK
+    }
 
 ---
 
