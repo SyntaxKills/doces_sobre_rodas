@@ -149,6 +149,10 @@ CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
   <img src="https://img.shields.io/badge/Abrir%20Site-%234caf50.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Abrir Site">
 </a>
 
+<a href="https://1drv.ms/p/c/A0D1E845FA457165/IQC-YBRveSPDTKkW2lwIbCENAfO7-Jw7cTUwqG-fhn3VJ14?e=K0tlp1" target="_blank">
+ <img src="https://img.shields.io/badge/documentação-%230078D4.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="documentação">
+</a>
+
 ---
 
 ## 🛠️ Ferramentas
