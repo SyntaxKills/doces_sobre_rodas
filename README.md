@@ -51,13 +51,95 @@ A nova solução agiliza o atendimento e organiza o estoque de doces por categor
 
 ---
 
-## 📈 Tabela (MySQL)
+### 📌 Tabela (MySQL)
 
-<p align="center">
- <img src="assets/images/MySQL.jpg" width="250">
-</p>
+```mermaid
+erDiagram
 
-Desenvolvendo...
+CLIENTE ||--o{ PEDIDO : realiza
+QUIOSQUE ||--o{ PEDIDO : recebe
+QUIOSQUE ||--o{ FUNCIONARIO : possui
+CATEGORIA ||--o{ PRODUTO : organiza
+PEDIDO ||--o{ ITEM_PEDIDO : contem
+PRODUTO ||--o{ ITEM_PEDIDO : participa
+QUIOSQUE ||--o{ ESTOQUE_QUIOSQUE : controla
+PRODUTO ||--o{ ESTOQUE_QUIOSQUE : possui
+CATEGORIA ||--o{ ESTOQUE_QUIOSQUE : classifica
+PEDIDO ||--|| PAGAMENTO : gera
+
+CLIENTE {
+    INT id_cliente PK
+    VARCHAR nome
+    VARCHAR email
+    VARCHAR telefone
+    VARCHAR senha
+    DATETIME data_cadastro
+}
+
+QUIOSQUE {
+    INT id_quiosque PK
+    VARCHAR nome
+    VARCHAR shopping
+    VARCHAR cidade
+    VARCHAR endereco
+}
+
+FUNCIONARIO {
+    INT id_funcionario PK
+    VARCHAR nome
+    VARCHAR cargo
+    DECIMAL salario
+    INT quiosque_id FK
+}
+
+CATEGORIA {
+    INT id_categoria PK
+    VARCHAR nome_categoria
+}
+
+PRODUTO {
+    INT id_produto PK
+    VARCHAR nome
+    TEXT descricao
+    DECIMAL preco
+    VARCHAR imagem
+    INT id_categoria FK
+}
+
+PEDIDO {
+    INT id_pedido PK
+    DATETIME data_pedido
+    DECIMAL valor_total
+    VARCHAR status
+    INT cliente_id FK
+    INT quiosque_id FK
+}
+
+ITEM_PEDIDO {
+    INT id_item_pedido PK
+    INT quantidade
+    DECIMAL preco_unitario
+    INT pedido_id FK
+    INT produto_id FK
+}
+
+PAGAMENTO {
+    INT id_pagamento PK
+    VARCHAR forma_pagamento
+    VARCHAR status_pagamento
+    DATETIME data_pagamento
+    DECIMAL valor_pago
+    INT pedido_id FK
+}
+
+ESTOQUE_QUIOSQUE {
+    INT id_estoque PK
+    INT quantidade
+    INT id_quiosque FK
+    INT id_produto FK
+    INT id_categoria FK
+}
+```
 
 ---
 
