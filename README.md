@@ -102,8 +102,8 @@ A automação do atendimento e do controle de estoque, que substituiu planilhas 
 
 ## 📄 Documentação
 
-<a href="https://docs.google.com/presentation/d/1HePIB2OfQoQOAYfWeV_9zhCV_SnTo0kgBY9E9xXOr2w/edit?usp=drivesdk" target="_blank">
- <img src="https://img.shields.io/badge/slides-red.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="slides">
+<a href="documento.txt" target="_blank">
+ <img src="https://img.shields.io/badge/documentação-%230078D4.svg?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="documentação">
 </a>
 
 ---
